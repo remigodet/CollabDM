@@ -5,8 +5,8 @@ import argparse
 import numpy as np
 import torch
 
-from client_IDM import Client
-from dc_utils import get_dataset_mtt, get_network, get_eval_pool, evaluate_synset, get_time, DiffAugment, ParamDiffAug, \
+from client import Client
+from utils import get_dataset_mtt, get_network, get_eval_pool, evaluate_synset, get_time, DiffAugment, ParamDiffAug, \
     partition_data, number_sign_augment, parser_bool
 
 def main():

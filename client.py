@@ -79,7 +79,7 @@ class Client:
         label_syn = torch.tensor([np.ones(ipc) * i for i in range(args.num_classes)], dtype=torch.long,
                                  requires_grad=False, device=args.device).view(-1)
 
-        if args.init == 'real':
+        if args.init_client == 'real':
             print('initialize synthetic data from random real images')
             for c in range(args.num_classes):
                 if not args.aug:
